@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./App.css"
-import React from 'react'
+import CreateTodoModal from './CreateTodoModal'
 
 export default function App() {
-  return (
-    <div>App</div>
-  )
+  const [createModal , setCreateModal] = useState (false)
+  const [editModal , setEditModal] = useState (false)
+
+  const [selectedTodo , setSelectedTodo] = useState (null)
+
 }
